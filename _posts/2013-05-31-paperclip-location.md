@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Paperclip Location
-modified: 2013-05-31
+modified: 2014-01-11
 ---
 
 Pulling geo-location from photos with Rails has never been easier.

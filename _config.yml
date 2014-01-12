@@ -1,0 +1,12 @@
+name: built by chief
+description: from the fingetips of Sean Doyle
+meta_description: "Ruby, Rails, and programming in general. From the fingertips of Sean Doyle. Made in Philadelphia with love."
+
+markdown: redcarpet
+pygments: true
+logo: false
+paginate: 10
+
+# Details for the RSS feed generator
+url:            'http://builtbychief.com'
+author:         'Sean Doyle'
