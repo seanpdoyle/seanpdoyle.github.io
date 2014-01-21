@@ -51,4 +51,5 @@ $ cap ssh:command RUN="tail -f log/production.log"
 
 #### Additional Reading
 
+* View the source code on [GitHub](https://github.com/snipsnap/recap-console)
 * `Capistrano` [version 3](http://capistranorb.com) now uses `git` for server-side deployment file resolution.

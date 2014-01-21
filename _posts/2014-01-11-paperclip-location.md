@@ -36,5 +36,6 @@ Now, whenever an image with `GPS` information in its `EXIF` headers is attached 
 
 ### Further Reading
 
+* View the source code on [GitHub](https://github.com/seanpdoyle/paperclip-location)
 * A working code example can be found [here](https://gist.github.com/seanpdoyle/8294526).
 * For a real example from the wild, checkout the source for [Chief](https://github.com/seanpdoyle/chief), an open-source skate spot catalog.
