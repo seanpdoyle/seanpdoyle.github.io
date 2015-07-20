@@ -8,7 +8,7 @@ archive: false
 
     <article class="post">
         <header class="post-header">
-            <a id="blog-logo" href="{{site.baseurl}}">
+            <a id="blog-logo" href="{{site.url}}">
                 {% if site.logo %}
                     <img src="{{site.logo}}" alt="{{ site.name }}" />
                 {% else %}
@@ -18,8 +18,8 @@ archive: false
         </header>
 
         <span class="post-meta">
-        	<time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>
-       	</span>
+          <time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>
+        </span>
 
         <h1 class="post-title">{{ page.title }}</h1>
 
@@ -29,27 +29,27 @@ archive: false
 
         {% if page.archive %}
         <section class="archive">
-        	<h5>Archive</h5>
-    		<ul>
-    			{% for post in site.posts %}
-    				<li><span>{{ post.date | date_to_string }}</span>  <a href="{{ post.url }}">{{ post.title }}</a></li>
-    			{% endfor %}
-    		</ul>
+          <h5>Archive</h5>
+        <ul>
+          {% for post in site.posts %}
+            <li><span>{{ post.date | date_to_string }}</span>  <a href="{{ post.url }}">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
         </section>
         {% endif %}
 
         <footer class="post-footer">
-        	<!-- If we want to display author's name and bio -->
+          <!-- If we want to display author's name and bio -->
             {% if site.author %}
                 <section class="author">
-                	<header> <a href="{{ site.baseurl }}"> <img class="profile" src="/assets/images/profile.jpg" alt="Author's profile picture"></a></header>
-                	<article>
-                		<!-- Author Name -->
-                    	<h4> {{ site.author }} </h4>
-                    	<!-- Author Bio -->
-                    	<p>
-                    		Sean is a Ruby on Rails developer living in Philadelphia, PA. He loves warm weather, road trips, nollie flips, and Wawa.
-                    	</p>
+                  <header> <a href="{{ site.baseurl }}"> <img class="profile" src="/assets/images/profile.jpg" alt="Author's profile picture"></a></header>
+                  <article>
+                    <!-- Author Name -->
+                      <h4> {{ site.author }} </h4>
+                      <!-- Author Bio -->
+                      <p>
+                        Sean is a Ruby on Rails developer living in Philadelphia, PA. He loves warm weather, road trips, nollie flips, and Wawa.
+                      </p>
                         <p>
                             You can follow him on
                             <a href="https://github.com/seanpdoyle">GitHub</a>.
@@ -76,19 +76,19 @@ archive: false
 
             {% if page.disqus %}
                 <section class="disqus">
-                	<div id="disqus_thread"></div>
-                	<script type="text/javascript">
+                  <div id="disqus_thread"></div>
+                  <script type="text/javascript">
 
-                	    var disqus_shortname = 'builtbychief';
-                		var disqus_developer = 0; // developer mode is on
-                	    (function() {
-                	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                	        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-                	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                	    })();
-                	</script>
-                	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                	<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                      var disqus_shortname = 'builtbychief';
+                    var disqus_developer = 0; // developer mode is on
+                      (function() {
+                          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                          dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                      })();
+                  </script>
+                  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
                 </section>
             {% endif %}
 
